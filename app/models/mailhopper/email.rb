@@ -22,7 +22,7 @@ module Mailhopper
 
     class << self
       def create_from_mail(mail)
-        create({
+        create!({
           :to_address       => address_to_s(mail.to),
           :from_address     => address_to_s(mail.from),
           :cc_address       => address_to_s(mail.cc),
